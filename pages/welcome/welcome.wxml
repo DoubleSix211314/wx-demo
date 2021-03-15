@@ -1,0 +1,16 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <!-- <image class="avatar" src="/images/avatar/1.png"></image> -->
+  <l-avatar open-data="{{['userAvatarUrl']}}" size="180"/>
+  <text class="motto">Hello,Joy</text>
+  <view bind:tap="onTap" class="journey-container">
+    <text class="journey">开启我的小程序</text>
+  </view>
+</view>
+
+<!-- Catch事件与Bind事件区别
+
+Catch事件：捕捉到当前事件，并阻止冒泡
+Bind事件：捕捉到当前事件，不阻止冒泡
+一般情况用Bind事件
+新版小程序mut-bind事件，自定义组件常用 -->

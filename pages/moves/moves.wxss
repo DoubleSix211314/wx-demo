@@ -1,0 +1,24 @@
+/* pages/moves/moves.wxss */
+.movie-list{
+  margin-bottom: 30rpx;
+}
+.ex-search-bar{
+  height: 90rpx !important;
+}
+.search-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30rpx 28rpx;
+  justify-content: space-between;
+}
+
+/* 兼容排版不满三个的情况 */
+.search-container::after{
+  content: '';
+  width: 200rpx;
+}
+
+page{
+  background-color: #f2f2f2;
+}
